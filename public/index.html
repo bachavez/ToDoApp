@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"ng-app="todoApp">
     <head>
-        <title></title>
+        <title>Todo Application</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <link href="../node_modules/bootstrap/dist/css/boostrap.css" rel="stylesheet">
     </head>
-    <body>
-    
+    <body ng-controller="todoController as todoCtrl">
+        <p>{{todoCtrl.testMessage}}</p>
+
+    <script src="../node_modules/angular/angular.js"></script>      
+    <script src="app/app.module.js"></script>  
+    <script src="app/todoApp/todo.controller.js"></script>  
     </body>
 </html>
